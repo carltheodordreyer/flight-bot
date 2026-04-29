@@ -17,8 +17,6 @@ def flights():
         seat="economy",
         passengers=Passengers(adults=1),
         fetch_mode="fallback",
-        currency="BRL",
-        language="pt-BR",
     )
     return jsonify({
         "current_price": result.current_price,
