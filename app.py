@@ -16,7 +16,7 @@ def flights():
         trip="one-way",
         seat="economy",
         passengers=Passengers(adults=1),
-        fetch_mode="fallback",
+        fetch_mode="common",
     )
     return jsonify({
         "from": request.args.get('from'),
